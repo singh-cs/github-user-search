@@ -1,0 +1,87 @@
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424;
+}
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+.App{
+    margin: 0 auto;
+    min-width: 350px;
+    max-width: 780px;
+    padding: 0.5rem;
+    text-align: center;
+
+}
+h1{
+    font-size: 1.8rem;
+}
+.search-form{
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    padding: 0.5rem;
+    border: 1px solid rgba(255, 255, 255, 0.514);
+    border-radius: 5px;
+    margin-bottom: 1.8rem;
+}
+.form-input{
+    width: 48%;
+    padding: 0.6rem 0.2rem ;
+    border-radius: 0.2rem;
+    border: 1px solid black;
+    outline: none;
+}
+.form-input::placeholder{
+    font-size: 1rem;
+}
+.form-btn{
+    width: 48%;
+    border-radius: 0.2rem;
+    background-color: #72ff19;
+    border: 1px solid #72ff19;
+    cursor: pointer;
+}
+
+.results{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 1rem;
+    justify-content: flex-start;
+
+}
+.single-user{
+    border: 1px solid rgba(255, 255, 255, 0.514);
+    border-radius: 0.2rem;
+    margin: 0.4rem;
+    padding: 1rem 0.5rem;
+    text-align: center;
+    color: white;
+    flex-basis: 45%;
+    border-radius: 5px;
+}
+.user-avatar{
+    width: 100px;
+    display: block;
+    margin: 0rem auto 1.2rem auto;
+    border-radius: 5px;
+}
+.user-link{
+    cursor: pointer;
+    text-decoration: none;
+    background-color: #72ff19;
+    color: #242424;
+    letter-spacing: 1px;
+    font-size: 1rem;
+    padding: 0.4rem 0.4rem;
+    border-radius: 5px;
+}
+@media screen and (min-width: 600px) {
+    .single-user{
+        flex-basis: 30%;
+    }
+}
